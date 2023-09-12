@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "sliderproject-398111",
+  "private_key_id": "54bcc9b7ec0d0a2a82b9feae796166ccde63e229",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC9yVUHVUeRUH11\nwgtKqiH0UWHRHibj5xx8uue5d4lJKwwMkg4nN9YQkpcTsiCbu3aa6VmKPwxth8pk\nK5QtcswJOZ4B8pPou/gaohQXqDpjd2WVjd6yQNPF31WEjFgz9O+pvpOd2pdr1ThT\n7vWQiSo1F+YJfISy/DzdIB/RUBYus2p9mPHoaXHeIi/RYezpTBwmhseO7j5aj8F+\nG2rJebn8vRn7XjFiaExyOE0+5ITGKsJ6vmFGxMersKJfWU7RmwN3M0WS2HKp/6vC\nWTTTar6siW1qZjZ3XU0VH48/ZZ2sgAaw4OdTlCr18j2xlJUExeTds78z7LgVsPqk\n+1ujNapRAgMBAAECgf8M9gyYiPHnGItWx/8XBPZmReRKaA1IaZ4Ms3LCAFsXUxC/\nl9OKSQ5zYBgK1aOxQ0snYtDhCssfjbNRkuyYg1Pa1fajeDYhu6OHHQqPCoN62JdG\nX25AtayvwXMAWmIjKj2JM8M+7zuSyBrhwrALIh/EEYyxEKD/ZQ/lLD+qsjgm766o\nkuEYa0xZhBKEwjXVv/gitjvqPLsmWVAM8mSgpQSizPnAeWP+yXOlpTZdVgkJBVC+\ngxmWXuzbZ0RItFeEGZVBqS2dWZo3QIqWzP62QnpMzyMOXEtLM5VDa/LKDyNSou33\nN49AosGY4tZjSwOcP0jrHEgIhaSMKq9PCshUP6UCgYEA/RHPnhglIyQucWNQnoYn\nM78ovkoSzz4+5Y1KC08vQKzHcXi+i/Sbstn2EZIJRD2yspPcF1GmOVhHtxq7VFeN\nzTKoEzwtl62UYieCrVXGiAfXQ1s21fwdBYPo2VB65qU57MZ12plq4D0wKxSfVo/E\n6Fh7/33t4mdZwUpJyIw+alUCgYEAv/vtYXGaDz6A90ZSxk5AbCe0YjH/nDRIInoS\n3oLEzYw08LWhtX65HtURSXCZ2bkwTenlypMy3vCkXHGy1Nap5p21ZXU/eKY0wsde\nc0sOhdCSYrK69zyYt9pbY4fSJ8vbqhz8IPDlE5LMyoOelI35feDNWYx1TTgV1eZh\nKw+tNA0CgYEApCa/cx7aR/caIPZ4vrrqBsjCFtxZYxBPH/sLwlY0olDwdYwKnSGn\nNNXopPEDDb6vgOIj6wRNO/klW4H9bPH1ytpG52Mrd61iCGD0hJaU1nuvh8NMyHRm\nJsOvb/aiIaWe8xSwMYE+MAHAktEnobBT2xo6JDl86lR7hcM4JNvDSJkCgYBXYw4H\nR9VvUO0VIS52U5IhaOVDuSx3ZpjbEKPcIrwAL+y9EH/+BCOxdBy9SALPxurE3E2b\nqusB7Zly9tIG7XtCnNC/0OHGQilL68IDSsvefzTStjZCaZO+RCdLI7y2HqXrRexB\n9kTfZvfOyqB5UDKbaKMwOq3+KyRNS+M43ZbiVQKBgQCwMd31xnOv07ijBAr/1EzB\nga9xZOJWuWE4er853RpapXMyJi7RHd03NNMm2U/iZWIn+xvWqCqq70mawcbjjBza\nOzFOXWI3duFNSHWFoDMb8CbkSPx7ggXcIaN9Wf5AkFXcJDyDm9mNDtyDe9Wl7cQ1\nSL5rCkWJyjBkKZs5TvfMzA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "slider-615@sliderproject-398111.iam.gserviceaccount.com",
+  "client_id": "105002707998637377628",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/slider-615%40sliderproject-398111.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

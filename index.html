@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .slider {
+          width: 100%;
+          height: 100vh;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+      .slider img {
+        width: 85%;
+        height: auto;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        
+      }
+
+      .slider img.active {
+        opacity: 1;
+      }
+
+      .pagination {
+        width: 70px;
+        height: 30px;
+        background-color: #1d5735;
+        position: absolute;
+        bottom: 50px;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFFF;
+        font-weight: 600;
+        font-size: 1.3em;
+        border-radius: 15px;
+        font-family: 'Courier New', Courier, monospace;
+
+        -webkit-box-shadow: 5px 8px 13px -2px rgba(95,95,95,0.6); 
+        box-shadow: 5px 8px 13px -2px rgba(95,95,95,0.6);
+      }
+
+      #btn_reload {
+        width: 30px;
+        height: 30px;
+        background: transparent;
+        border-radius: 100%;
+        border: none;
+        position: absolute;
+        right: -30px;
+
+      }
+      
+      #numPag span{
+        width: 100%;
+        height: auto;
+      }
+    </style>
+    <title>Slider de Imagens do Google Drive</title>
+  </head>
+  <body>
+    <div id="slider-container">
+      <img id="imageSlider" src="" alt="Imagem do Slider" />
+    </div>
+    <div class="pagination">
+      <span id="textPag">1 </span>
+      <span>/</span>
+      <span id="numPag">1</span>
+      <button id="btn_reload">
+        🔃
+      </button>
+    </div>
+
+
+    <script>
+      let imagens;
+
+      // Trabalhe nessa função
+      const btnReload = document.querySelector("#btn_reload");
+      btnReload.addEventListener("click", () => {
+        alert("Carregado!");
+      });
+
+      function fetchData() {
+        return fetch("/imagens")
+          .then((response) => response.json())
+          .then((data) => {
+            imagens = data;
+          })
+          .catch((error) => {
+            console.error("Erro ao buscar a lista de imagens:", error);
+          });
+      }
+
+      fetchData().then(() => {
+        // Slider de imagens
+
+        const slideImage = document.querySelector("#imageSlider");
+        const numPage = document.querySelector("#numPag");
+
+        imagens = imagens.map((imagem) => imagem.webContentLink);
+
+        let currentImageIndex = 0;
+        let totalImages = imagens.length;
+
+        function resetImages() {
+          slideImage.style.opacity = 0;
+        }
+
+        function showNextImage() {
+          resetImages();
+          
+          let srcImg = imagens[currentImageIndex];
+          
+          currentImageIndex = (currentImageIndex + 1) % totalImages;
+          console.log(currentImageIndex);
+
+          slideImage.setAttribute("src", srcImg);
+          slideImage.style.opacity = 1;
+
+          textPag.textContent = currentImageIndex;
+      }
+
+      numPag.textContent = totalImages;
+      showNextImage();
+
+      // Agendar a exibição das próximas imagens
+      setInterval(
+        showNextImage,
+        3000
+      )});
+    </script>
+  </body>
+</html>
